@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Quick Start
+Before your start, Please check your environment:  
+1. node: >=8.11.2
+ 
+After checking, please run:
+```
+npm i && npm start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
