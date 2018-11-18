@@ -1,9 +1,19 @@
 .container {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas:
+    'gridFirst gridFirst'
+    '. .'
+    '. .';
+  background-color: var(--paleGrey);
+  width: 100vw;
+  height: 100vh;
+  grid-gap: 1px;
 }
-.pollFirst {
-
+.container .pollFirst {
+  grid-area: gridFirst;
 }
-.poll {
-
+.container .poll {
+  background-color: var(--white);
 }

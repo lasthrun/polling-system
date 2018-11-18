@@ -1,0 +1,16 @@
+.container {
+  padding: var(--alignmentS) var(--alignmentM);
+  border: none;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.basic {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  transition: background-color var(--during);
+}
+
+.basic:hover {
+  background-color: var(--darkBlueHover);
+}

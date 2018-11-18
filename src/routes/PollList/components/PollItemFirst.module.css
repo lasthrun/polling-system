@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  padding: var(--alignmentL);
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 2fr 1fr;
+  grid-row-gap: var(--alignmentS);
+  grid-column-gap: var(--alignmentM);
+  grid-template-areas:
+    'todaysPoll .'
+    'title chart'
+    'options chart'
+    'votesRecords .';
+}
+.container .todaysPoll{
+  grid-area: todaysPoll;
+  font-weight: bold;
+  color: var(--darkBlue);
+  text-align: left;
+}
+.container .title{
+  grid-area: title;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+.container .date{
+  margin-left: var(--alignmentXS);
+  color: var(--darkBlue);
+  font-weight: bold;
+  font-size: 14px;
+}
+.container .options{
+  grid-area: options;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: var(--alignmentS);
+}
+.container .option{
+  margin-top: var(--alignmentXS);
+}
+.container .option.first{
+  margin-top: 0;
+}
+.container .votesRecords{
+  grid-area: votesRecords;
+  font-size: 14px;
+}
+.container .chart{
+  grid-area: chart;
+}

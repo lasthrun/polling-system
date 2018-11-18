@@ -1,3 +1,97 @@
-.container {
-
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      'title title'
+      'date date'
+      'options chart'
+      'votesRecords votesRecords';
+    height: 100vh;
+    width: 100vw;
+  }
+  .container .title{
+    grid-area: title;
+    font-size: 28px;
+    padding-bottom: var(--alignmentXS);
+    border-bottom: 1px dotted var(--grey);
+  }
+  .container .date{
+    grid-area: date;
+    margin-left: var(--alignmentXS);
+    padding: var(--alignmentM);
+    color: var(--darkBlue);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+  }
+  .container .options{
+    grid-area: options;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--alignmentL) 0 var(--alignmentL) calc(var(--alignmentL) + var(--alignmentS));
+    background-color: var(--lightBlue);
+  }
+  .container .option{
+    margin-top: var(--alignmentXS);
+  }
+  .container .option.first{
+    margin-top: 0;
+  }
+  .container .votesRecords{
+    grid-area: votesRecords;
+    padding: var(--alignmentM) var(--alignmentL);
+    background-color: var(--lightBlue);
+    font-size: 14px;
+  }
+  .container .chart{
+    grid-area: chart;
+    background-color: var(--lightBlue);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+      'title'
+      'options'
+      'chart'
+      'votesRecords';
+    grid-gap: var(--alignmentS);
+    padding: var(--alignmentL);
+    background-color: var(--lightBlue);
+    height: 100vh;
+    width: 100vw;
+  }
+  .container .title{
+    grid-area: title;
+    font-size: 24px;
+  }
+  .container .date{
+    display: none;
+  }
+  .container .options{
+    grid-area: options;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container .option{
+    margin-top: var(--alignmentXS);
+  }
+  .container .option.first{
+    margin-top: 0;
+  }
+  .container .votesRecords{
+    grid-area: votesRecords;
+    padding: var(--alignmentM) var(--alignmentL);
+    font-size: 14px;
+    text-align: center;
+  }
+  .container .chart{
+    grid-area: chart;
+  }
 }
