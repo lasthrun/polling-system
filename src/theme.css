@@ -1,0 +1,78 @@
+html {
+  width: 100%;
+  height: 100%;
+  color: var(--black);
+  font-family: var(--brandFont) sans-serif;
+  font-size: var(--fontSizeBase);
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div, header, section {
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* variables */
+html {
+  /* color */
+  --hoverAlpha: .74;
+  --transparent: rgba(0,0,0,0);
+  --brand: rgba(0,165,70,1);
+  --brandHover: rgba(0,165,70,var(--hoverAlpha));
+  --darkBlue: rgba(0,58,112,1);
+  --darkBlueHover: rgba(0,58,112,var(--hoverAlpha));
+  --blue: rgba(0,126,245,1);
+  --lightBlue: rgba(115,184,249,1);
+  --lightBlueHover: rgba(115,184,249,.56);
+  --white: rgba(255,255,255,1);
+  --whiteHover: rgba(0,0,0,.1);
+  --black: rgba(0,0,0,1);
+  --blackHover: rgba(0,0,0,.56);
+  --grey: rgba(101,119,134,1);
+  --paleGrey: rgba(184,190,202,1);
+  --paleGreyAlpha: rgba(0,0,0,.47);
+  
+  /* alignment */
+  --alignmentL: 24px;
+  --alignmentM: 16px;
+  --alignmentS: 8px;
+  --alignmentXS: 4px;
+  
+  /* ui */
+  --box-max-width: 1280px;
+  --header-height: 40px;
+  
+  /* transition during */
+  --during: .2s;
+  
+  /* fonts */
+  --brandFont: 'Roboto';
+  --fontSizeBase: 14px;
+}
